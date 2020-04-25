@@ -49,11 +49,11 @@ def get_hosts(network_bits):
 
     host_bits = max_bits - int(network_bits)
 
-    host_bits = pow(2, host_bits)
+    hosts = pow(2, host_bits)
 
-    host_bits -= 2 # remove network id and broadcast
+    hosts -= 2 # remove network id and broadcast
 
-    return host_bits
+    return hosts
 
 def get_network_mask(network_bits):
 
@@ -116,7 +116,7 @@ def main():
         broadcast = get_network_or_broadcast(binary_ip_clean,network_bits,'broadcast')
 
         print('-'*50)
-        print(f'IP: {dot_decimal_ip}')
+        print(f'IP: {ip}')
         print('-'*50)
         print(f'Binary IP: {binary_ip}')
         print('-'*50)
