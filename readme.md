@@ -4,8 +4,7 @@ Gets an IPv4 in CIDR notation and calculates the available hosts and the network
 
 ### TODO
 
-- Network ID
-- Broadcast address
+- ~~Network ID~~
+- ~~Broadcast address~~
 - ~~IP validation~~
-- Pass ip as arguments
-- Debug mode
+- ~~Add script arguments (optional to replace manual input)~~
